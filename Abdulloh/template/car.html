@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cars</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; /* Light cyan background */
+            color: #004d40; /* Dark teal text */
+        }
+        h1 {
+            color: #004d40; /* Dark teal */
+            text-align: center;
+        }
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #ffffff; /* White background for table */
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #004d40; /* Dark teal border */
+        }
+        th {
+            background-color: #b2dfdb; /* Light teal background for header */
+        }
+    </style>
+</head>
+<body>
+    <h1>Car List</h1>
+    <table>
+        <tr>
+            <th>Car</th>
+        </tr>
+        {% for car in car_list %}
+        <tr>
+            <td>{{ car }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
